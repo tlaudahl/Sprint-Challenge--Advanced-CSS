@@ -311,6 +311,32 @@ footer {
   font-weight: bold;
   transform: scale(1.2);
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #22283a;
+    background-color: #22283a;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .home .walk .walk-text .btn:hover {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #22283a;
+    background-color: #fff;
+    color: #22283a;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transform: none;
+    transition: none;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

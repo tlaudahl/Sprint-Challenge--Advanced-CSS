@@ -1,7 +1,7 @@
 // Mixins Here
 
-.customBtn(@color: #22283a, @font-color: #fff) {
-    width: 33%;
+.customBtn(@color: #22283a, @font-color: #fff, @width: 33%) {
+    width: @width;
     padding: 3%;
     border: 1px solid #22283a;
     background-color: @color;
@@ -10,6 +10,11 @@
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+.btnAnimationNone() {
+    transform: none;
+    transition: none;
 }
 
 .flex-center() {

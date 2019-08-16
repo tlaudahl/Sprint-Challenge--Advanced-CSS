@@ -64,8 +64,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-center();
     // Media Query //
     @media @phone {
       flex-direction: column-reverse;
@@ -93,6 +92,13 @@
         &:hover {
           .customBtn(@color: #fff, @font-color: #22283a);
           transform: scale(1.2);
+        }
+        @media @phone {
+          .customBtn(@width: 100%);
+          &:hover {
+            .customBtn(@color: #fff, @font-color: #22283a, @width: 100%);
+            .btnAnimationNone()
+          }
         }
       }
     }
