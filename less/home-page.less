@@ -58,6 +58,12 @@
       }
 
       .btn {
+        transition: all .3s ease-in-out;
+        .customBtn();
+        &:hover {
+          .customBtn(@color: #fff, @font-color: #22283a);
+          transform: scale(1.2);
+        }
       }
     }
 
